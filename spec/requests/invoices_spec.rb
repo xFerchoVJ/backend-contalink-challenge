@@ -21,7 +21,7 @@ RSpec.describe "Invoices API", type: :request do
       get '/invoices', params: {start_date: '2025-01-08', end_date: '2025-01-14'}
 
       expect(response).to have_http_status(:ok)
-      body = JSON.parse(request.body)
+      body = JSON.parse(response.body)
       expect(body).to be_empty
     end
 
