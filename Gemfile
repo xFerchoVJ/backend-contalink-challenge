@@ -35,6 +35,7 @@ gem "bootsnap", require: false
 
 # Redis
 gem 'redis'
+gem 'redis-rails'
 
 # Jobs
 gem 'sidekiq'

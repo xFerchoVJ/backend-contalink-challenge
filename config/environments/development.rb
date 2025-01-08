@@ -27,7 +27,11 @@ Rails.application.configure do
   else
     config.action_controller.perform_caching = false
 
-    config.cache_store = :null_store
+    config.cache_store = :redis_cache_store, {
+      url: 'redis://localhost:6379/0',
+      namespace: 'backend_contalink_cache',
+      expires_in: 90.minutes
+    }
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
