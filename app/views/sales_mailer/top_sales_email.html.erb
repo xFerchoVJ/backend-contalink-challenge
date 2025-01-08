@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <h1>Top 10 Días con Más Ventas</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Total Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% top_sales.each do |sale| %>
+          <tr>
+            <td><%= sale.invoice_date %></td>
+            <td><%= sale.total_sales %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>

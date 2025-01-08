@@ -42,6 +42,17 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # Configuration mailer
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp-relay.brevo.com',
+    port: 587,
+    user_name: ENV['BREVO_USERNAME'],
+    password: ENV['BREVO_PASSWORD'],
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
