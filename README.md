@@ -18,9 +18,9 @@ Este es un proyecto de Rails que resuelve el reto del backend de contalink, se c
 Clona el repositorio a tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/xFerchoVJ/backend-contalink-challenge.git
 ```
-cd challenge-backend-contalink
+cd backend-contalink-challenge
 
 
 ### 2. Instalar dependencias
