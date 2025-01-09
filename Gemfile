@@ -39,6 +39,7 @@ gem 'redis-rails'
 
 # Jobs
 gem 'sidekiq'
+gem 'sidekiq-cron'
 
 # Mails
 gem 'mailgun-ruby'
